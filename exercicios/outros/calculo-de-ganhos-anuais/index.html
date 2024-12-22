@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01 TUP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Cálculo da média de ganhos mensais</p>
+
+    <p>Valor bruto dos lucros obtido no período de um ano <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g, '')" id="ganhoBruto"></p>
+    <p>Valor total das despesas no período do mesmo ano <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g, '')" id="despesaTotal"></p>
+    <button onclick="mediaDeGanhosMensais()">Calcular</button>
+    <div id="retorno"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

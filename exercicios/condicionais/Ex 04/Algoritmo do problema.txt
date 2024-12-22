@@ -1,0 +1,55 @@
+
+	Algoritmo:
+
+1 - pergunta o valor gasto.
+2 - le o valor gasto
+3 - armazena o valor gasto
+4 - pergunta se tem cupom de desconto:
+
+	se (tiver cupom de desconto) então:
+
+		se (valor gasto > 1000)então:		 
+			 desconto por valor = valor gasto -20% do valor gasto
+			 valor final = desconto por valor - 15%
+			 retorna a resposta: O total a pagar é de 'valor final';
+
+                se não se (valor gasto >=500 E valor gasto <=1000) então:
+			 desconto por valor = valor gasto -10% do valor gasto
+			 valor final = desconto por valor - 15%
+			 retorna a resposta: O total a pagar é de 'valor final';
+
+	        se não se (valor gasto >=200 E valor gasto <=499) então:
+			 desconto por valor = valor gasto - 5% do valor gasto
+			 valor final = desconto por valor - 15%
+			 retorna a resposta: O total a pagar é de 'valor final';
+
+	        se não se (valor de gasto <200 E >0) então:
+			 valor final = valor gasto - 15% do valor gasto
+			 retorna a resposta: você não atingiu o valor para receber um desconto extra além do valor do cupom;
+
+		senão: alerte: valor precisa ser maior que 0, digite o valor novamente.
+
+
+	se não:
+
+		se (valor gasto > 1000) então:
+			valor final = valor gasto - 20% do valor gasto
+			retorna a resposta:O total a pagar é de 'valor final';
+
+		se não se (valor gasto >=500 E valor gasto <=1000) então:
+			valor final = valor gasto - 10% do valor gasto
+			retorna a resposta: O total a pagar é de 'valor final';
+
+		se não se (valor gasto >=200 E valor gasto <=499) então:
+			valor final = valor gasto - 5% do valor gasto
+			retorna a resposta: O total a pagar é de 'valor final';
+		
+		se não se (valor gasto <200 E valor gasto >0) então:
+			retorne a resposta: Você não alcançou o valor em compras para receber um cupom de desconto.
+
+		senão: alerte: valor precisa ser maior que 0, digite o valor novamente.
+
+
+5- retorna uma mensagem com o valor a ser pago de acordo com a condição estabelecida.			
+	
+		

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Valor total gasto
+    <input type="text" id="valorGasto"></p>
+    <p>Possuí cupom de desconto?
+    <input type="submit" value="SIM" id="sim" onclick="comCupom()">
+    <input type="submit" value="NÃO" id="nao" onclick="semCupom()"></p>
+    <p id="retorno"></p>
+
+   
+
+
+
+    <script >
+       debugger
+
+       var valorTotalDaCompra = document.getElementById("valorGasto").value
+    valorTotalDaCompra = parseFloat(valorTotalDaCompra);
+        
+        var retorno = document.getElementById("retorno")
+
+
+
+       //essa função será ativada apenas se o usuário dizer que possuí cupom
+       function comCupom(){
+
+            var comCupom = true;
+
+            if (valorTotalDaCompra >=1000){
+                retorno.innerHTML="Parabéns vo"
+
+            }
+
+
+
+           
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //essa função será ativada apenas se o usuário dizer que não possuí cupom
+        function semCupom(){
+            var comCupom = false;
+           
+        }
+        
+        var comCupom = comCupom();
+        var semCupom = semCupom();
+        
+        console.log(comCupom)
+       
+       
+       
+       
+      
+            
+    
+
+   
+   
+
+    </script>
+</body>
+</html>

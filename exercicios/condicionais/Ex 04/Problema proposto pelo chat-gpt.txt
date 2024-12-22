@@ -1,0 +1,17 @@
+Problema criado pelo Chat-gpt
+
+Você está criando um sistema de cálculo de descontos em uma loja online. O sistema deve verificar o valor total da compra e aplicar o desconto de acordo com as seguintes regras:
+
+Se o valor da compra for superior a R$ 1000,00, o cliente ganha um desconto de 20%.
+Se o valor da compra for entre R$ 500,00 e R$ 1000,00 (inclusive), o cliente ganha um desconto de 10%.
+Se o valor da compra for entre R$ 200,00 e R$ 499,99 (inclusive), o cliente ganha um desconto de 5%.
+Se o valor da compra for abaixo de R$ 200,00, o cliente não ganha desconto, mas deve ser informado sobre isso.
+Caso o cliente tenha um cupom de desconto válido (um valor booleano que indica se o cliente tem o cupom), ele recebe 15% de desconto sobre o valor final, após aplicar o desconto original.
+Entrada:
+O valor da compra (um número real).
+Se o cliente possui ou não um cupom de desconto (um valor booleano).
+Saída:
+O valor total após os descontos aplicados.
+Exemplo de funcionamento:
+Para uma compra de R$ 1200,00, sem cupom, o desconto seria de 20%, e o valor final seria R$ 960,00.
+Para uma compra de R$ 450,00, com um cupom de desconto, o desconto seria de 5% inicialmente, e após aplicar o cupom de 15%, o valor final seria calculado com os dois descontos.
