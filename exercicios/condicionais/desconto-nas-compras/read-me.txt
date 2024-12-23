@@ -1,0 +1,39 @@
+# Sistema de Cálculo de Descontos
+
+Este projeto implementa um sistema simples para calcular descontos em uma loja online com base em regras predefinidas.
+
+## Descrição
+
+O sistema permite calcular o valor final de uma compra com base no valor gasto e se o cliente possui um cupom de desconto. As regras de desconto são:
+
+1. **Sem cupom**:
+   - Compras acima de R$ 1000: 20% de desconto.
+   - Compras entre R$ 500 e R$ 1000: 10% de desconto.
+   - Compras entre R$ 200 e R$ 499: 5% de desconto.
+   - Compras abaixo de R$ 200: sem desconto.
+
+2. **Com cupom**:
+   - Aplica o desconto original primeiro (baseado no valor da compra) e, em seguida, aplica um desconto adicional de 15% sobre o valor restante.
+
+## Estrutura de Arquivos
+
+- **index.html**: Contém a estrutura HTML da aplicação.
+- **style.css**: Define as regras de estilo vinculadas ao HTML.
+- **script.js**: Implementa a lógica do sistema de cálculo de descontos em JavaScript.
+- **problema.txt**: Documento com a descrição do problema proposto.
+- **algoritmo.txt**: Documento contendo o algoritmo desenvolvido para resolver o problema.
+- **analise.png**: Captura de tela com a análise crítica da solução realizada pelo assistente virtual.
+
+## Como Visualizar o Projeto
+
+1. Clone este repositório em sua máquina local:
+
+   ```bash
+   git clone <URL do repositório>
+   ```
+
+2. Abra o arquivo `index.html` em seu navegador para visualizar a interface do sistema.
+
+## Comentários Finais
+
+Este projeto foi desenvolvido para aprender lógica de programação e boas práticas no desenvolvimento web. Caso tenha dúvidas ou sugestões, fique à vontade para contribuir ou entrar em contato!
