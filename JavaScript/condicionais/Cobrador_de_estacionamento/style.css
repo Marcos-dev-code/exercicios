@@ -1,0 +1,84 @@
+
+    /* Estilo geral */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Bloco principal */
+    .bloco-principal {
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    /* Cabeçalho */
+    .bloco-principal h1 {      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Sub-blocos */
+    .sub-bloco {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .sub-bloco p {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    /* Input e botões */
+    .sub-bloco input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .sub-bloco button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-right:10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #entrada {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    #saida {
+      background-color: #28A745;
+      color: white;
+    }
+
+    /* Div de retorno */
+    .retorno {
+      height: 50px;
+      background-color: #e9ecef;
+      border: 1px dashed #ccc;
+      border-radius: 5px;
+    }
