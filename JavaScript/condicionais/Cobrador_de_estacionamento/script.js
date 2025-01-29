@@ -4,8 +4,7 @@
 //Essa função é responsavel por registrar a placa e o horario da entrada do veiculo no estacionamento!
 //função que é chamada quando o botão de entrada de veiculo for acionado.
 function entrada(){
-    var placa = document.getElementById('placa-do-carro').value; // captura o valor dentro do elemento selecionado pelo id.
-    var placa = placa.toUpperCase();                            //converte as letras digitas para maiusculas
+    var placa = document.getElementById('placa-do-carro').value.toUpperCase(); // captura o valor dentro do elemento selecionado pelo id.
     var retorno = document.getElementById("retorno")            //captura o elemento selecionado pelo id
     var hora_da_entrada =document.getElementById("retorna-horario-de-entrada")
 
