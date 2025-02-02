@@ -9,27 +9,28 @@
   <body>
     <header></header>
     <main>
-      
+      <!--inicio do bloco principal-->
       <div class="bloco-principal">
         <h1>Estacionamento TIME</h1>
-        
         <div class="sub-bloco">
+          <!--solicita a paca do carro-->
           <p>Qual a placa do carro?</p>
           <input type="text" maxlength="7" placeholder="Digite a placa do carro" id="placa-do-carro">
-              
+          <!--botões que dao o checkin e o checkout do veiculo-->
           <button id="entrada">Registrar Entrada</button>
           <button id="saida">Registrar Saída</button>
         </div>
       </div>
-        
+
+      <!--elementos que serão alterados-->
       <div id="retornar-placa"></div>
-      <div id="retorna-horario-de-entrada"></div>
-      <div id="retorna-horario-de-saida"></div>
+      <div id="horario-de-entrada"></div>
+      <div id="horario-de-saida"></div>
       <div id="valor-a-pagar"></div>
-            
-          
+    
       <script src="script.js"></script>
     </main>
+    
     <footer></footer>
   </body>
 </html>
