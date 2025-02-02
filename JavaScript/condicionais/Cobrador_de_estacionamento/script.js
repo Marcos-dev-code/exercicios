@@ -24,12 +24,53 @@ function entrada(){
         const horas = agora.getHours();
         const minutos= agora.getMinutes();
         const segundos = agora.getSeconds();
+        const indice = [horas,":", minutos,":", segundos]
 
-        const entrou_as = horas + ":" + minutos + ":" + segundos
+        //constante que armazena os valores das variaveis de dentro da função em arrays.
+        const retornoF1 = [placa, indice]
 
-        retornarPlaca.innerHTML = `<p>Placa registrada: <strong>${placa}</strong></p>`
-        retornarHoras.innerHTML = `Entrada registrada as <strong>${entrou_as}</strong>`
-        return entrou_as;      
+        retornarPlaca.innerHTML = `<p>Placa do veiculo: <strong>${placa}</strong></p>`
+        retornarHoras.innerHTML = `Entrada registrada as ${indice[0]}:${indice[2]}:${indice[4]}`
+        return retornoF1;
+
+
     }        
                   
+}
+
+
+function saida(){
+    debugger
+   
+    var retornarPlaca = document.getElementById("retornar-placa")
+    var retornarHoras = document.getElementById("retorna-horario-de-entrada")
+    var valorAPagar = document.getElementById("valor-a-pagar")
+
+    const agora = new Date();
+
+    const horas = agora.getHours();
+    const minutos= agora.getMinutes();
+    const segundos = agora.getSeconds();
+    const indice2 = [horas,":", minutos,":", segundos]
+    
+
+    //constante que armazena os valores das variaveis de dentro da função em arrays.
+    //b       bhg n = [hora_formatada]
+
+    retornarPlaca.innerHTML = `<p>Placa do veiculo: <strong>${entrada()[0]}</strong></p>`
+    retornarHoras.innerHTML = `Saida registrada as ${indice2[0]}:${indice2[2]}:${indice2[4]}`
+    
+
+    //bloco para impedir que o botao registrar saida seja acionado antes de registrar a entrada.
+    if(entrada() == null){
+        alert("Por favor, registre a entrada do veiculo!")
+    }else{
+         tempo_estacionado = indice2[0,2,4] - entrada()[1][0,2,4]
+        
+
+
+        valorAPagar.innerHTML = `Tempo estacionado: ${tempo_estacionado}`
+
+    }
+
 }
